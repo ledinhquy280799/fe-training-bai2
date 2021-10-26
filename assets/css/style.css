@@ -300,6 +300,20 @@ h6 {
     text-align: center;
 }
 
+#journal .section-content .row div:nth-child(1) {
+    padding: 0 25px;
+}
+
+#journal .section-content .row div:nth-child(3) {
+    padding: 0px;
+}
+
+#journal .section-content .paginate {
+    color: #000; 
+    margin: 0; 
+    font-size: 12px;
+}
+
 #journal .section-content .title {
     color: #16b5ef;
     font-weight: 700;
@@ -642,6 +656,11 @@ blockquote:before {
     padding-bottom: 10px;
 }
 
+/* Mobile & tablet: width < 1024px */
+@media only screen and (max-width: 63.9375em) {
+
+}
+
 /* Mobile: Width < 740px */
 @media only screen and (max-width: 46.1875em) {
     #offer .section-content input[type=submit] {
@@ -703,8 +722,33 @@ blockquote:before {
 
 /* Table: width >= 740px and width < 1024px */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    #offer .section-content form #your-name {
+        display: block;
+    }
+
+    #offer .section-content input[type=submit] {
+        position: static;
+    }
+
+    #offer .section-content input[type=text]:nth-child(1) {
+        width: 100%;
+        max-width: 578px;
+    }
+
+    #offer .section-content input[type=text] {
+        border-radius: 4px !important;
+    }
+
+    #offer .section-content input {
+        margin: 10px;
+    }
+
     .header-front-page {
         background-attachment: initial !important;
+    }
+
+    .arrow-right, .arrow-left, .arrow-bottom {
+        display: none;
     }
 
     #about-us .section-header img {
@@ -722,5 +766,22 @@ blockquote:before {
 
     #about-us .section-header img {
         margin-top: 21px !important;
+    }
+
+    #journal .section-content .row div:nth-child(1), #journal .section-content .row div:nth-child(5) {
+        padding: 0px;
+    }
+
+    #journal .section-content .row div:nth-child(2) {
+        margin-bottom: 50px;
+    }
+
+    #journal .section-content .row div:nth-child(4) {
+        margin-bottom: 50px;
+    }
+
+    .journal-content {
+        width: 100%;
+        max-width: 374px;
     }
 }
