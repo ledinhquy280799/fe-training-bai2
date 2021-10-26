@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Open Sans';
+    overflow-x: hidden;
 }
 
 #header {
@@ -13,31 +14,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-}
-
-@media only screen and (max-width: 1024px) {
-    .header-front-page {
-        background-attachment: initial !important;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    #about-us .section-header img {
-        margin-top: 42px !important;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    #about-us .section-content img:nth-child(2) {
-        top: 113px !important;
-        right: 65px !important;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    #about-us .section-content img:nth-child(1) {
-        top: -220px !important;
-    }
 }
 
 .header-front-page {
@@ -456,20 +432,22 @@ h6 {
     height: 33px;
 }
 
-#partners a:nth-child(1), #partners a:nth-child(2), #partners a:nth-child(3), #partners a:nth-child(4), #partners a:nth-child(5) {
+/* #partners a:nth-child(1), #partners a:nth-child(2), #partners a:nth-child(3), #partners a:nth-child(4), #partners a:nth-child(5) {
     padding: 0 50px;
-}
+} */
 
 blockquote {
     border: none;
+    position: relative;
 }
 
 blockquote:before {
+    font-family: Arial;
     position: absolute;
-    content: open-quote;
-    font-size: 4em;
-    margin-left: -0.6em;
-    margin-top: -0.4em;
+    content: "\201C";
+    font-size: 10em;
+    left: 22px;
+    top: -105px;
 }
 
 #clients-say .section-header {
@@ -627,4 +605,91 @@ blockquote:before {
 
 .journal-image {
     position: relative;
+}
+
+#footer .section-content .content {
+    padding-bottom: 10px;
+}
+
+/* Mobile: Width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    #offer .section-content input[type=submit] {
+        position: static;
+        max-width: none;
+    }
+
+    #offer .section-content input[type=text] {
+        width: 100% !important;
+        max-width: 800px;
+        border-radius: 4px !important;
+    }
+
+    #offer .section-content input {
+        margin: 10px 0;
+
+    }
+
+    #offer .section-content form #your-phone, #offer .section-content form #your-name {
+        display: block;
+    }
+
+    .header-front-page {
+        background-attachment: initial !important;
+        background-repeat:no-repeat !important;
+        background-size:auto !important;
+        background-position:center !important;
+    }
+
+    #partners {
+        height: 277px;
+        width: 100%;
+        background-color: rgb(188, 188, 188, 0.9);
+        text-align: center;
+        line-height: 141px;
+        margin-bottom: 70px;
+    }
+
+    #about-us .section-header img {
+        margin-top: 42px !important;
+    }
+
+    #about-us .section-content img:nth-child(2) {
+        display: none;
+    }
+
+    #about-us .section-content img:nth-child(1) {
+        top: -220px !important;
+    }
+
+    .bottom-header {
+        padding-bottom: 166px;
+    }
+
+    #journal {
+        padding-top: 122px;
+    }
+}
+
+/* Table: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .header-front-page {
+        background-attachment: initial !important;
+    }
+
+    #about-us .section-header img {
+        margin-top: 42px !important;
+    }
+
+    #about-us .section-content img:nth-child(2) {
+        top: 113px !important;
+        right: 65px !important;
+    }
+
+    #about-us .section-content img:nth-child(1) {
+        top: -220px !important;
+    }
+
+    #about-us .section-header img {
+        margin-top: 21px !important;
+    }
 }
