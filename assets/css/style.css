@@ -665,6 +665,12 @@ blockquote:before {
 
 /* Mobile: Width < 740px */
 @media only screen and (max-width: 46.1875em) {
+    #gallery .section-content a img {
+        max-width: 140px;
+        width: auto;
+        height: auto;
+    }
+
     #offer .section-content input[type=submit] {
         position: static;
         max-width: none;
@@ -724,6 +730,12 @@ blockquote:before {
 
 /* Table: width >= 740px and width < 1024px */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    #gallery .section-content a img {
+        max-width: 200px;
+        width: auto;
+        height: auto;
+    }
+
     #offer .section-content form #your-name {
         display: block;
     }
