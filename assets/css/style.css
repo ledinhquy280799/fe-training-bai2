@@ -658,7 +658,9 @@ blockquote:before {
 
 /* Mobile & tablet: width < 1024px */
 @media only screen and (max-width: 63.9375em) {
-
+    .arrow-right, .arrow-left, .arrow-bottom {
+        display: none;
+    }
 }
 
 /* Mobile: Width < 740px */
@@ -745,10 +747,6 @@ blockquote:before {
 
     .header-front-page {
         background-attachment: initial !important;
-    }
-
-    .arrow-right, .arrow-left, .arrow-bottom {
-        display: none;
     }
 
     #about-us .section-header img {
