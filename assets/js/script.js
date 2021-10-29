@@ -11,6 +11,10 @@ $(document).ready(function() {
             "close"
         ]
     });
+
+    $('.open-responsive-menu').click(function() {
+        $('.responsive-menu').toggleClass('active');
+    });
 });
 $(window).on('load', function() {
     $(".loader").fadeOut(1000);
