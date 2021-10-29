@@ -359,7 +359,7 @@ h6 {
 
 #offer .section-description {
     font-size: 15px;
-    line-height: 15px;
+    line-height: 21px;
     color: #949494;
     margin-bottom: 30px;
 }
@@ -738,7 +738,7 @@ blockquote:before {
 }
 
 /* Table: width >= 740px and width < 1024px */
-@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+@media only screen and (min-width: 46.25em) and (max-width: 75em) {
     #gallery .section-content a img {
         max-width: 200px;
         width: auto;
