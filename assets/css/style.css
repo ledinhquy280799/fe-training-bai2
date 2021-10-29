@@ -60,10 +60,10 @@ ul {
 }
 
 li {
-    margin-left: 40px;
+    margin-left: 27px;
     line-height: 40px;
     font-weight: 700;
-    font-size: 14px;
+    /* font-size: 14px; */
     color: white;
     position: relative;
     float: left;
@@ -116,6 +116,10 @@ h6 {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: rgb(255, 255, 255, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .top-header.row {
@@ -151,7 +155,7 @@ h6 {
 
 #header .top-header .header-navigation ul li a {
     color: #9daeb6;
-    font-size: 9px;
+    font-size: 12px;
     line-height: 26px;
 }
 
@@ -193,7 +197,7 @@ h6 {
 }
 
 #header .bottom-header .section-description {
-    line-height: 17px;
+    line-height: 20px;
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 50px;
@@ -535,9 +539,11 @@ blockquote:before {
     height: 496px;
     max-width: 515px;
     width: 100%;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.55);
     border-radius: 7px;
     text-align: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 #footer .top-footer .form-footer h4 {
@@ -660,6 +666,10 @@ blockquote:before {
 @media only screen and (max-width: 63.9375em) {
     .arrow-right, .arrow-left, .arrow-bottom {
         display: none;
+    }
+
+    #header .top-header .header-logo {
+        float: left
     }
 }
 
