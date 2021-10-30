@@ -137,7 +137,7 @@ h6 {
     font-weight: 700;
     text-decoration: none;
     color: #36aeea;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 40px;
     float: right;
 }
@@ -223,6 +223,11 @@ h6 {
 .header-button-bottom:hover {
     color: #27ae60;
     text-decoration: none;
+    border: none;
+}
+
+#about-us .section-about-button:hover {
+    color: #27ae60;
 }
 
 #about-us {
@@ -445,7 +450,15 @@ h6 {
 }
 
 #offer .section-content input[type=submit]:hover {
-    background-color: rgb(41, 146, 199);
+    /* background-color: rgb(41, 146, 199); */
+    color: #27ae60;
+    background-color: #36aeeabd;
+    border: none;
+}
+
+#footer .top-footer input[type=submit]:hover {
+    color: #27ae60;
+    background-color: #36aeeabd;
 }
 
 #gallery {
@@ -700,12 +713,12 @@ blockquote:before {
         display: block;
     }
 
-    .header-front-page {
+    /* .header-front-page {
         background-attachment: initial !important;
         background-repeat:no-repeat !important;
         background-size:auto !important;
         background-position:center !important;
-    }
+    } */
 
     #partners {
         height: 277px;
@@ -833,6 +846,8 @@ blockquote:before {
         background-color: #fff;
         margin-top: 20px;
         display: none;
+        transform-origin: left;
+        animation: navBarShow ease-in 0.4s;
     }
 
     .responsive-menu ul {
@@ -852,10 +867,21 @@ blockquote:before {
         border-bottom: 1px solid #e4e4e4;
         color: #000;
         text-align: center;
+        font-weight: 16px;
+        font-weight: 800;
+    }
+
+    .responsive-menu ul li a:hover {
+        color: #27ae60;
+        text-decoration: none;
     }
 
     .responsive-menu.active {
+        height: 497px;
         display: block;
+        width: 100%;
+        background-color: #fff;
+        margin-top: 74px;
     }
 }
 
@@ -883,7 +909,7 @@ blockquote:before {
         border: none;
         outline: 0;
         display: block !important;
-        background-color: rgb(54 174 234);
+        background-color: rgb(54, 174, 234);
         float: left;
         margin-left: 54%;
     }
@@ -894,5 +920,20 @@ blockquote:before {
 }
 
 .responsive-menu {
+    left: 0;
+    position: relative;
     display: none;
+    top: 0;
+    z-index: 80;
+}
+
+@keyframes navBarShow {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
